@@ -15,7 +15,7 @@ export const ProductCard = ({ id, title, price, image, category }) => {
             <div className="flex flex-col justify-between gap-4 p-4 h-full border-t border-t-slate-800">
                 <div className="flex flex-col justify-between h-full gap-4">
                     <div className="font-bold">title</div>
-                    <div>${price.toFixed(2)}</div>
+                    <div>${price?.toFixed(2)}</div>
                 </div>
                 <button className='flex items-center justify-center p-2 font-bold w-full bg-black text-white hover:bg-slate-800'
                     onClick={() => dispatch(addToCart(product))}
