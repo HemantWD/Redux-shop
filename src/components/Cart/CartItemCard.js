@@ -9,8 +9,12 @@ const CartItemCard = ({ id, title, price, image, quantity }) => {
     const dispatch = useDispatch();
 
     const formatTitle = (title) => {
+        if (title === undefined) {
+            return '';
+        }
         return title.length <= 14 ? title : title.substr(0, 14) + '...';
     };
+
 
     const sumPrice = () => {
         return (cartItem.price * cartItem.quantity).toFixed(2)

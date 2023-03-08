@@ -10,7 +10,7 @@ import { addToCart } from "../../state/actions/cart";
     return (
         <div className="flex flex-col rounded-lg text-xl bg-white border border-slate-800">
             <div className="h-72 p-12 my-0 mx-auto">
-                <img className='h-full' src={image} alt={title} />
+                <img className='h-full' src={image} alt="title" />
             </div>
             <div className="flex flex-col justify-between gap-4 p-4 h-full border-t border-t-slate-800">
                 <div className="flex flex-col justify-between h-full gap-4">
