@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { ProductCard } from "./ProductCard";
+import ProductCard  from "./ProductCard";
 import { setProducts } from '../../state/actions/products';
 
 const Products = () => {
@@ -17,12 +17,15 @@ const Products = () => {
     }
 
     const fetchProducts = async () => {
-        const response = await fetch('https://fakestoreapi.com/products');
+        const response = await fetch('https://fakestoreapi.com/products')
+        // .then(res=>res.json())
+        // .then(json=>console.log(json))
         let data = await response.json();
+        // console.log(data);
         return data;
     }
 
-    const filterProducts = async () => {
+    const filterProducts =  () => {
         return products.filter(
             (product) =>
                 product.category === `men's clothing` ||

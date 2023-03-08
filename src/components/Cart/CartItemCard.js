@@ -9,7 +9,7 @@ const CartItemCard = ({ id, title, price, image, quantity }) => {
     const dispatch = useDispatch();
 
     const formatTitle = (title) => {
-        return (title.length <= 14 ? title : title.substr(0, 14) + '...');
+        return title.length <= 14 ? title : title.substr(0, 14) + '...';
     };
 
     const sumPrice = () => {
@@ -18,7 +18,7 @@ const CartItemCard = ({ id, title, price, image, quantity }) => {
     return (
         <div className='flex'>
             <div className="w-1/5 h-[6rem] m-auto">
-                <img src="" className='h-full w-auto' alt="" />
+                <img src={image} className='h-full w-auto' alt="" />
             </div>
             <div className="flex flex-col items-center justify-between w-full text-lg gap-2">
                 <div className="overflow-hidden font-bold h-8">

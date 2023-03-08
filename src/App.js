@@ -1,6 +1,6 @@
-import Cart from './components/Cart';
-import Navbar from './components/Navbar';
 import Products from './components/Products';
+import Navbar from './components/Navbar';  
+import Cart from './components/Cart';
 
 
 function App() {

@@ -10,8 +10,8 @@ function Navbar() {
     const sumQuantity = () => {
         return cart.reduce(
             (quantity, cartItem) => quantity + cartItem.quantity, 0
-        )
-    }
+        );
+    };
     return (
         <header className='bg-[#180f96] px-4'>
             <div className="flex flex-col items-center justify-between w-full max-w-[140rem] my-0 mx-auto p-4 md:flex-row">
